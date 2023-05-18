@@ -1,0 +1,13 @@
+name: shiny_bofa
+title: shiny_bofa
+username: pritam.dalal
+account: pritam.dalal
+server: colorado.posit.co
+hostUrl: https://colorado.posit.co/rsc/__api__
+appId: 16398
+bundleId: 74288
+url: https://colorado.posit.co/rsc/content/15d62d1b-0730-45c5-a5cb-31d5568079c1/
+when: 1684250458.10103
+lastSyncTime: 1684250458.10104
+asMultiple: FALSE
+asStatic: FALSE

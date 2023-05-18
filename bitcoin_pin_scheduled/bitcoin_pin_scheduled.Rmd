@@ -1,0 +1,49 @@
+---
+title: "Scheduled Pin of Intraday Bitcoin Prices"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(riingo)
+library(pins)
+
+knitr::opts_chunk$set(echo = TRUE, paged.print = FALSE)
+```
+
+This R markdown document updates a `pin` on Connect.  The pin is called `bitcoin_intraday`.
+
+
+### Setting Tiingo API Key
+```{r}
+token <- Sys.getenv("RIINGO_TOKEN")
+riingo_set_token(token, inform = TRUE)
+```
+
+
+
+### Grabbing Data from Tiingo API
+
+```{r}
+df <-
+  riingo_crypto_latest(
+    "btcusd",
+    resample_frequency = "10min",
+    base_currency = NULL,
+    exchanges = NULL,
+    convert_currency = NULL,
+    raw = FALSE
+  )
+df
+```
+### Creating Board
+```{r}
+board <- board_rsconnect(auth = "envvar")
+```
+
+
+### Writing Pin
+```{r}
+board %>% pin_write(df, "bitcoin_intraday", type = "csv")
+```
+

@@ -1,0 +1,48 @@
+---
+title: "Soybeans Pin in R - Read"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(pins)
+knitr::opts_chunk$set(echo = TRUE, paged.print = FALSE)
+```
+
+
+In this R markdown document we read from a pin hosted on Connect.  The pin is a data set consisting of historical soybean yields.
+
+
+### Creating the Board
+
+The first step to reading a pin is creating a board, which is essentially a connection to the Connect server.  In order to do this you need to set the `CONNECT_SERVER` and `CONNECT_API_KEY` environment variables in the `.Renviron` file.
+```{r}
+board <- board_connect(auth = "envvar")
+```
+
+
+### Reading the Pin
+
+Next, to read the pin we use the `pins::pin_read()` function.
+```{r}
+df <- board %>% pin_read("pritam.dalal/soybean_yields_pin") %>% tibble()
+df
+```
+
+### Visualizing USA Soybean Yields
+
+Finally let's visualize the history soybean yields for the United States.
+```{r}
+df %>% 
+  filter(entity == "united states") %>% 
+  ggplot(mapping = aes(x = year, y = crop_yield)) +
+  geom_line() +
+  ggtitle("USA Soybean Yields: 1961-2018") +
+  xlab("year") +
+  ylab("yield")
+```
+
+
+
+
+

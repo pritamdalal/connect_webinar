@@ -1,0 +1,39 @@
+---
+title: "Soybeans Pin in R - Write"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(pins)
+knitr::opts_chunk$set(echo = TRUE, paged.print = FALSE)
+```
+
+
+In this R markdown document we write a pin to Connect.  The pin consists of historical soybean yields. 
+
+### Reading and Wrangling Data
+
+We begin by reading the full crop yields data set and then filtering it for soybeans.
+```{r}
+df <- read_csv("crop_yields.csv", show_col_types = FALSE)
+df <- df %>% filter(product == "soybeans") %>% drop_na()
+df
+```
+
+
+### Creating the Board
+
+The next step in writing a pin is creating a board, which is essentially a connection to the Connect server.  In order to do this you need to set the `CONNECT_SERVER` and `CONNECT_API_KEY` environment variables in the `.Renviron` file.
+```{r}
+board <- board_rsconnect(auth = "envvar")
+```
+
+
+### Writing the Pin
+
+To write the pin, we use the `pins::pin_write()` function.
+```{r}
+board %>% pin_write(df, "soybean_yields_pin", type= "csv")
+```
+

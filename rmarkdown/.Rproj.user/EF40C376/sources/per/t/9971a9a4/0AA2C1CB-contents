@@ -1,0 +1,39 @@
+---
+title: "R Markdown"
+output: 
+  html_document:
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, paged.print = FALSE)
+```
+
+This is a simple static R markdown document with an interactive plot.
+
+### Importing ETF Price Data
+
+We begin by importing some ETF price data that was sourced from Yahoo Finance.  We do this by using `readr::read_csv()`.
+
+```{r}
+df <- read_csv("prices.csv", show_col_types = FALSE)
+df
+```
+
+### Plotting Price Data
+
+Next, we create an interactive plot of the data using the `ggplot` package along with the `plotly` package.
+
+```{r}
+plot <- 
+  df %>% 
+    ggplot(mapping = aes(x = date, y = adj_close, color = symbol)) +
+    geom_line() +
+    ggtitle("ETF Prices") +
+    xlab("date") +
+    ylab("adjusted close")
+
+plot %>% ggplotly()
+```

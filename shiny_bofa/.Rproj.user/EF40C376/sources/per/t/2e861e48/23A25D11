@@ -1,0 +1,27 @@
+{
+    "id": "23A25D11",
+    "path": "~/files/pin_r_soybean_yields/01_pin_r_soybean_yields_write.Rmd",
+    "project_path": null,
+    "type": "r_markdown",
+    "hash": "2202972011",
+    "contents": "",
+    "dirty": false,
+    "created": 1684243225492.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "36,70",
+        "scrollLine": "30",
+        "last_setup_crc32": "2e861e48aaa52fe4"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1676494830,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1684243496558,
+    "read_only": false,
+    "read_only_alternatives": []
+}

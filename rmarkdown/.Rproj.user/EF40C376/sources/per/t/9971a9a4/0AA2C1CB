@@ -1,0 +1,27 @@
+{
+    "id": "0AA2C1CB",
+    "path": "~/files/rmarkdown/01_r_markdown.Rmd",
+    "project_path": "01_r_markdown.Rmd",
+    "type": "r_markdown",
+    "hash": "3534539285",
+    "contents": "",
+    "dirty": false,
+    "created": 1676489631602.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "3,2",
+        "scrollLine": "0",
+        "last_setup_crc32": "9971a9a4a69895c9"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1678811343,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1678811343140,
+    "read_only": false,
+    "read_only_alternatives": []
+}

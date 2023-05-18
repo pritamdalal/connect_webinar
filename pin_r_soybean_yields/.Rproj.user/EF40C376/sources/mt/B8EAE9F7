@@ -1,0 +1,27 @@
+{
+    "id": "B8EAE9F7",
+    "path": "~/files/pin_r_soybean_yields/02_pin_r_soybean_yields_read.Rmd",
+    "project_path": "02_pin_r_soybean_yields_read.Rmd",
+    "type": "r_markdown",
+    "hash": "207621062",
+    "contents": "",
+    "dirty": false,
+    "created": 1684250924906.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "27,16",
+        "scrollLine": "30",
+        "last_setup_crc32": "7cc4051faaa52fe4"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1676495170,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1684250972797,
+    "read_only": false,
+    "read_only_alternatives": []
+}

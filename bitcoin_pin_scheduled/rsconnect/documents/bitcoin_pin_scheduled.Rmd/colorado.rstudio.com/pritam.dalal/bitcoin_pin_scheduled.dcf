@@ -1,0 +1,13 @@
+name: bitcoin_pin_scheduled
+title: bitcoin_pin_scheduled
+username: pritam.dalal
+account: pritam.dalal
+server: colorado.rstudio.com
+hostUrl: https://colorado.rstudio.com/rsc/__api__
+appId: 11620
+bundleId: 57824
+url: https://colorado.rstudio.com/rsc/content/a45a5b10-ea21-4b7a-abb1-bd730cf3c9f1/
+when: 1655762935.68802
+lastSyncTime: 1655762935.68803
+asMultiple: FALSE
+asStatic: FALSE

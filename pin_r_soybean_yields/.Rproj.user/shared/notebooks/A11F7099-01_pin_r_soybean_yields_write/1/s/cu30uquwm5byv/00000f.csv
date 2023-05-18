@@ -1,0 +1,2 @@
+"0","board %>% pin_write(df, ""soybean_yields_pin"", type= ""csv"")"
+"2","Writing to pin 'pritam.dalal/soybean_yields_pin'"

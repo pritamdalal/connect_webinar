@@ -1,0 +1,11 @@
+{
+    "https://colorado.rstudio.com/rsc": {
+        "server_url": "https://colorado.rstudio.com/rsc",
+        "filename": "/usr/home/pritam.dalal/files/bokeh/03_bokeh_interactions.ipynb",
+        "app_url": "https://colorado.rstudio.com/rsc/content/229f9879-ec1f-4ad0-8a78-16ef742351e9/",
+        "app_id": 12731,
+        "app_guid": "229f9879-ec1f-4ad0-8a78-16ef742351e9",
+        "title": "bokeh_notebook",
+        "app_mode": "jupyter-static"
+    }
+}

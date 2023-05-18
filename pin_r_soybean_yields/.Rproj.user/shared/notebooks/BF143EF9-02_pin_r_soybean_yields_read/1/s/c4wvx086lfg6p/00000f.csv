@@ -1,0 +1,2 @@
+"0","board <- board_rsconnect(auth = ""envvar"")"
+"2","Connecting to RSC 2023.01.0 at <https://colorado.rstudio.com/rsc>"

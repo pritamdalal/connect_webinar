@@ -1,0 +1,34 @@
+"0","df <- board %>% pin_read(""pritam.dalal/soybean_yields_pin"") %>% tibble()"
+"2","[31m✖[39m Failed to connect to RSC; using cached version
+"
+"0","df"
+"1","[38;5;246m# A tibble: 5,961 × 4[39m
+"
+"1","   entity  year product  crop_yield
+"
+"1","   [3m[38;5;246m<fct>[39m[23m  [3m[38;5;246m<int>[39m[23m [3m[38;5;246m<fct>[39m[23m         [3m[38;5;246m<dbl>[39m[23m
+"
+"1","[38;5;250m 1[39m africa  [4m1[24m961 soybeans      0.376
+"
+"1","[38;5;250m 2[39m africa  [4m1[24m962 soybeans      0.394
+"
+"1","[38;5;250m 3[39m africa  [4m1[24m963 soybeans      0.395
+"
+"1","[38;5;250m 4[39m africa  [4m1[24m964 soybeans      0.369
+"
+"1","[38;5;250m 5[39m africa  [4m1[24m965 soybeans      0.348
+"
+"1","[38;5;250m 6[39m africa  [4m1[24m966 soybeans      0.375
+"
+"1","[38;5;250m 7[39m africa  [4m1[24m967 soybeans      0.419
+"
+"1","[38;5;250m 8[39m africa  [4m1[24m968 soybeans      0.416
+"
+"1","[38;5;250m 9[39m africa  [4m1[24m969 soybeans      0.459
+"
+"1","[38;5;250m10[39m africa  [4m1[24m970 soybeans      0.437
+"
+"1","[38;5;246m# … with 5,951 more rows[39m
+"
+"1","[38;5;246m# ℹ Use `print(n = ...)` to see more rows[39m
+"

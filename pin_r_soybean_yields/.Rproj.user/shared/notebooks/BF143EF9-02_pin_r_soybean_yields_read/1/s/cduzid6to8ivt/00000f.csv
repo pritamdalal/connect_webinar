@@ -1,0 +1,7 @@
+"0","df %>% "
+"0","  filter(entity == ""united states"") %>% "
+"0","  ggplot(mapping = aes(x = year, y = crop_yield)) +"
+"0","  geom_line() +"
+"0","  ggtitle(""USA Soybean Yields: 1961-2018"") +"
+"0","  xlab(""year"") +"
+"0","  ylab(""yield"")"
